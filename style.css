@@ -1,0 +1,238 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(27, 27, 27);
+    
+  }
+  
+  .leftboxes {
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    background-color: blue;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+  }
+  
+  .middleboxes {
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    background-color: rgb(0, 255, 0);
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+  }
+  
+  .rightboxes {
+    width: 250px;
+    height: 250px;
+    margin: 0 10px;
+    background-color: red;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    
+  }
+  
+  .box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .box-title {
+    
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .leftboxes .box-title {
+    content: "Box 1";
+    text-shadow: 3px 3px black;
+  }
+  
+  .middleboxes .box-title {
+    content: "Box 2";
+    text-shadow: 3px 3px black;
+  }
+  
+  .rightboxes .box-title {
+    content: "Box 3";
+    text-shadow: 3px 3px black;
+  }
+  .clicked {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(rgb(97, 97, 97),rgb(57, 57, 57),rgb(27, 27, 27));
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    text-align: center;
+    border-width: 1px;
+    border-color: gold;
+    border-style: solid;
+  }
+  
+  .selected-box{
+    width: 250px;
+    height: 250px;
+    margin-right: 10%;
+    background-color: #333333;
+    position: relative;
+    top: 25%;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+    box-shadow: 3px 3px 3px black;
+  }
+  
+  .random-box{
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    background-color: #333333;
+    position: relative;
+    top: 25%;
+    display: inline-block;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gold;
+    box-shadow: 3px 3px 3px  black;
+  }
+ 
+  
+ .oyuncu{
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    color: rgb(0, 255, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ }
+
+ .bot{
+    position: absolute;
+    top: -35px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 3px black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+ }
+ .vs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+.vs h1{
+  color: gold;
+  font-size: 50px;
+  font-style: italic;
+  text-shadow: 3px 3px black;
+  
+}
+img[alt="right"] {
+  transform: scaleX(-1);
+}
+ /*POPUP Z INDEXİ İLE YAPILABİLİR. KAZANDIN KAYBETTİN YAZISI EKLENEBİLİR.*/
+ 
+.container h1{
+ 
+  z-index: 1;
+  color: black;
+  position: fixed;
+  top: 4%; /* yazının üst kenarını ekranın üst kenarına getir */
+  left: 0; /* yazının sol kenarını ekranın sol kenarına getir */
+  width: 100%; /* yazının genişliğini ekran genişliği kadar yap */
+  text-align: center; /* yazıyı yatay olarak ortala */
+}
+
+.container h2{
+ 
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 4%; /* yazının üst kenarını ekranın üst kenarına getir */
+  left: 0; /* yazının sol kenarını ekranın sol kenarına getir */
+  width: 100%; /* yazının genişliğini ekran genişliği kadar yap */
+  text-align: center; /* yazıyı yatay olarak ortala */
+}
+
+.vs button{
+  background-image: linear-gradient(245.59deg, rgb(07,07,07) 0%, rgb(27,27,27) 28.53%, rgb(77,77,77) 75.52%);
+  color: powderblue;
+  font-size: 50px;
+  font-style:normal;
+  text-shadow: 3px 3px black;
+  margin-top: 90%;
+  margin-left: 10px;
+  position:relative;
+  border-style:groove;
+  border-radius: 5px;
+  border-color: goldenrod;
+  box-shadow: 2px 2px 2px  black;
+}
+.vs button:hover{
+  margin-left: 11px;
+  box-shadow: 0px 0px 0px 1px black;
+  border-color: gold;
+  color: rgb(0, 247, 255);
+  background-image: linear-gradient(245.59deg, rgb(27,27,27) 0%, rgb(87,87,87) 28.53%, rgb(117,117,117) 75.52%);
+}
+
+.leftboxes:hover,
+.rightboxes:hover,
+.middleboxes:hover{
+  box-shadow: 0px 0px 0px 4px gold;
+}

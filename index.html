@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+ 
+    <div class="container">
+      
+      <h1 id="myElement"> </h1>
+      <h2>Yapımcı: Kubilay GÜLER</h2>
+        <div class="leftboxes">
+          <img src="images/DAŞ.png" alt="taş">
+          <div class="box-title">Box 1</div>
+          <div class="box-content"></div>
+        </div>
+        <div class="middleboxes">
+          <img src="images/kagit.png" alt="kagit">
+          <div class="box-title">Box 2</div>
+          <div class="box-content"></div>
+        </div>
+        <div class="rightboxes">
+          <img src="images/makas.png" alt="makas">
+          <div class="box-title">Box 3</div>
+          <div class="box-content"></div>
+        </div>
+      </div>
+      
+      <div class="popup">
+        
+        <div class="selected-box">
+          <img id="myImage" src="" alt="left">
+            <div class="oyuncu">SEN</div>
+            <div class="box-content"></div>
+        </div>
+        <div class="random-box">
+          <img id="image" src="images/DAŞ.png" alt="right">
+            <div class="bot">Rakip</div>
+            <div class="box-content"></div>
+        </div>
+      <div class="vs"><h1>—» VS «—</h1>
+        <button id="tekrarOyna" onclick="location.reload()">Tekrar Oyna</button>
+      </div>
+
+      </div>
+      
+      <script src="app.js"></script>
+</body>
+</html>

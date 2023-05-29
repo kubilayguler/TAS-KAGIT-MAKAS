@@ -1,0 +1,23 @@
+name: Run Start Function
+
+on:
+  schedule:
+    - cron: "59 21 * * *"
+
+jobs:
+  run_start_function:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Run start function
+        run: |
+          npm install
+          node app.js

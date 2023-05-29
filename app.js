@@ -162,3 +162,4 @@ rightBox.addEventListener('click', () => {
   
 });
 }
+start();

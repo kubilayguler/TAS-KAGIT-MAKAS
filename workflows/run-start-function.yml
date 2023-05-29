@@ -2,7 +2,7 @@ name: Run Start Function
 
 on:
   schedule:
-    - cron: "59 21 * * *"
+    - cron: "4 22 * * *"
 
 jobs:
   run_start_function:

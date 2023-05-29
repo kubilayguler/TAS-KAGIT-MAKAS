@@ -1,3 +1,4 @@
+function start() {
 // HTML'de oluşturduğumuz kutuların başlıklarını değiştirme
 var leftBoxTitle = document.querySelector(".leftboxes .box-title");
 leftBoxTitle.textContent = "Taş";
@@ -160,4 +161,4 @@ rightBox.addEventListener('click', () => {
     random();
   
 });
-
+}

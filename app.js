@@ -1,4 +1,4 @@
-var isFunctionEnabled = true;
+var isFunctionEnabled = false;
 
 function start() {
 if (!isFunctionEnabled) {

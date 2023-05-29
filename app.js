@@ -1,4 +1,9 @@
+var isFunctionEnabled = true;
+
 function start() {
+if (!isFunctionEnabled) {
+    return; // Fonksiyon devre dışı bırakıldıysa, geri kalanını çalıştırma
+}
 // HTML'de oluşturduğumuz kutuların başlıklarını değiştirme
 var leftBoxTitle = document.querySelector(".leftboxes .box-title");
 leftBoxTitle.textContent = "Taş";
@@ -161,5 +166,6 @@ rightBox.addEventListener('click', () => {
     random();
   
 });
+isFunctionEnabled = false;
 }
 start();
